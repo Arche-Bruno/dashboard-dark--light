@@ -1,0 +1,47 @@
+.r_seccionRemindersCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.2rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease-in-out;
+}
+.r_seccionRemindersCard:hover{
+    box-shadow: none;
+}
+.r_seccionRemindersCard-icons{
+    background-color: var( --color-dark );
+
+    padding: 8px;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+
+}
+.r_seccionRemindersCard-icon{
+  transition: all 0.3s ease-in-out;
+  color: var(--color-primary);
+}
+.r_seccionRemindersCard-icons:hover .r_seccionRemindersCard-icon{
+    transform: scale(1.2);
+}
+
+.r_seccionRemindersCard-data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+}
+.r_seccionRemindersCard-data h3{
+ font-size: 15px;
+ font-weight: 600;
+ color: var(--color-dark);
+}
+.r_seccionRemindersCard-data p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-info-dark);
+}

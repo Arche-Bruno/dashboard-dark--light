@@ -1,0 +1,143 @@
+.section_main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem 0rem;
+  padding-left: 1rem;
+
+  width: 100%;
+}
+.section_main-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section_main-container h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 2rem;
+  color: var(--color-dark);
+}
+
+/*CARD*/
+
+.section_mainCard-container {
+  width: 30%;
+  border-radius: 1rem;
+  max-width: 300px;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.section_mainCard-container:hover {
+  box-shadow: none;
+}
+.section_mainCard-container-info {
+  width: 100%;
+}
+.section_mainCard-container-info span {
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--color-info-dark);
+}
+.section_mainCard-container-info h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-dark);
+}
+.section_mainCard-container-porcentage {
+  position: relative;
+  height: 100%;
+}
+.section_mainCard-container-porcentage .pocentage {
+  position: absolute;
+  top: 40%;
+  right: 35%;
+  color: var(--color-info-dark);
+}
+
+/*USERS*/
+.section_main_users {
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.section_main_users:hover {
+  box-shadow: none;
+}
+/*ORDERS*/
+
+.section_main_orders {
+  width: 100%;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: 2rem 1rem;
+
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.section_main_orders:hover {
+  box-shadow: none;
+}
+.section_main_orders table {
+  width: 100%;
+}
+.section_main_orders thead {
+  width: 100%;
+}
+.section_main-container-iconHamburguer {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .section_mainCard-container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .section_mainCard-container-porcentage {
+    padding: 0;
+    margin: 0;
+    height: 120px;
+  }
+  .section_mainCard-container-info span {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .section_mainCard-container-info h2 {
+    font-size: 19px;
+    font-weight: 800;
+  }
+  .section_main-container {
+    padding-left: 0;
+  }
+  .section_main-container-iconHamburguer {
+    display: block;
+    margin-left: 2rem;
+    background-color: var(--color-white);
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .section_main-container-iconHamburguer:hover .icon-hamburguer {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+  .icon-hamburguer {
+    transition: all 0.3s ease;
+  }
+}

@@ -1,0 +1,38 @@
+.container-app{
+  background-color: var(--color-background);
+  width: 100%;
+  min-height: 100vh;
+  color: var(--color-dark);
+  position: relative;
+  display: flex;
+}
+.conatiner-main-right{
+  width: 100%;
+  display: flex;
+  margin-left:  240px;
+}
+.container-aside{
+  height: 100vh; /* Ocupa toda la altura del viewport */
+  width: 100%;
+
+}
+.container-main{
+  flex: 6;
+}
+.container-right{
+  flex: 2;
+}
+@media screen and (max-width:1200px) {
+  .conatiner-main-right{
+    flex-direction: column;
+   
+  }
+  
+}
+@media screen and (max-width:900px) {
+  .conatiner-main-right{
+    flex-direction: column;
+    margin-left:  0px;
+  }
+
+}

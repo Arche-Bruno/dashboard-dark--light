@@ -1,0 +1,155 @@
+.Aside-toggle {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos hijos se coloquen en columna */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh; /* Ocupa toda la altura del viewport */
+  max-width: 240px;
+  padding:  2.5rem 0;
+
+}
+.Aside-logo {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+
+  align-content: flex-start;
+  margin-left: auto;
+  
+  gap: 0.5rem;
+
+}
+.Aside-icon-close{
+  cursor: pointer;
+}
+.Aside-icon-close{
+  display: none;
+}
+.Aside-logo_name {
+  display: flex;
+  align-items: center;
+
+}
+.Aside-logo_name h2 {
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.Aside-logo_name .logo-danger {
+  color: var(--color-main);
+}
+.Aside-logo .logo {
+  background-color: var(--color-main);
+
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.Aside-logo .logo img {
+  display: block;
+  width: 100%;
+}
+
+.Aside-sidebar {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  flex-grow: 1; /* Hace que el sidebar ocupe todo el espacio restante vertical */
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s ease;
+  margin-left: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.Aside-sidebar:hover{
+  box-shadow: none;
+}
+.Aside-logout{
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1.2rem;
+  justify-content: center;
+    cursor: pointer;
+    color: var(--color-info-dark);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+   
+    
+}
+
+.Aside-logout span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.Aside-logout:hover{
+    color: var(--color-primary);
+    color: black;
+}
+.Aside-icon-close{
+  color: var(--color-danger);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid transparent;
+   transition: border 0.3s ease;
+}
+.Aside-icon-close:hover{
+  border: 1px solid var(--color-main);
+
+}
+.Aside-icon-close.hide{
+  display:none;
+}
+@media screen and (max-width:1200px){
+  .Aside-sidebar{
+    max-width: 100px;
+  
+ 
+}
+.Aside-logout span{
+  display: none;
+}
+}
+@media screen and (max-width:900px) {
+  .Aside-sidebar{
+    max-width: 200px;
+  
+ 
+}
+
+.Aside-toggle {
+z-index: 9999;
+max-width: 220px;
+background-color: #000;
+transform: translateX(-300px);
+transition: all 0.3s ease-in-out;
+
+}
+.Aside-icon-close{
+  position: absolute;
+  top: 1%;
+  right: 0;
+}
+.Aside-toggle.show{
+  transform: translateX(0px);
+}
+.Aside-icon-close{
+  display: block;
+}
+.Aside-logout span{
+  display: block;
+}
+}

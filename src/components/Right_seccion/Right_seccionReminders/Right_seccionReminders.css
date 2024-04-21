@@ -1,0 +1,91 @@
+.right_seccionReminders-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+     width: 100%;
+    max-width: 380px;
+    height: 420px;
+    
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    
+}
+.right_seccionReminders-container-cards{
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.right_seccionReminders-container-cards::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  .right_seccionReminders-container-cards::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .right_seccionReminders-container-cards::-webkit-scrollbar-thumb {
+    background: #000;
+  }
+  
+  /* Handle on hover */
+  .right_seccionReminders-container-cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.right_seccionReminders-container-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.right_seccionReminders-container-header h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+.right_seccionReminders-container-icon{
+  background-color: var(--color-white);
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+.right_seccionReminders-container-icon .r_secction-icon{
+
+    transition: all 0.3s ease-in-out;
+}
+.right_seccionReminders-container-icon:hover .r_secction-icon{
+   transform: scale(1.2);
+}
+@media screen and (max-width:900px){
+  .right_seccionReminders-container{
+
+    max-width: 290px;
+    background-color: var(--color-white);
+    padding: 0.5rem;
+   box-shadow: var(--box-shadow);
+
+    transition: all 0.3s ease-in-out;
+}
+.right_seccionReminders-container:hover{
+box-shadow: none;
+}
+}
+@media screen and (max-width:600px) {
+  .right_seccionReminders-container{
+
+    max-width: 380px;
+
+
+    transition: all 0.3s ease-in-out;
+}
+ 
+}

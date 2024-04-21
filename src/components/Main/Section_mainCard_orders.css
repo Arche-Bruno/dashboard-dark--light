@@ -1,0 +1,36 @@
+.Section_mainCard_orders-container{
+    width: 100%;
+}
+.th.orders_h1{
+    color: var(--color-dark);
+    font-size: 18px;
+    font-weight: 800;
+}
+.th.yellow{
+color: var(--color-warning)
+}
+.th.red{
+    color: var(--color-danger)
+}
+.th.gray{
+    color: var(--color-dark)
+}
+
+
+
+.th{
+    padding: 0.4rem 0;
+    color: var(--color-info-dark);
+}
+@media screen and (max-width:900px){
+
+    .th.orders_h1{
+        color: var(--color-dark);
+        font-size: 14px;
+        font-weight: 800;
+    }
+    .th{
+        font-size: 12px;
+        text-align: left;
+    }
+}
